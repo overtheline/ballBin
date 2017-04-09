@@ -1,0 +1,29 @@
+{
+  "name": "ball-bin",
+  "version": "1.0.0",
+  "description": "Animated circles",
+  "main": "timer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open": "open index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/overtheline/ballBin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/overtheline/ballBin/issues"
+  },
+  "homepage": "https://github.com/overtheline/ballBin#readme",
+  "dependencies": {
+    "d3": "^4.7.4"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
