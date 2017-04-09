@@ -1,0 +1,44 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "indent": [
+        "error",
+        2
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ]
+  },
+  "globals": {
+    "d3": true,
+    "Timer": true,
+    "Ball": true,
+    "Pi": true,
+    "round": true,
+    "width": true,
+    "height": true,
+    "xScale": true,
+    "yScale": true,
+    "rScale": true,
+    "dist": true,
+    "sin": true,
+    "cos": true,
+    "atan": true,
+    "collide": true,
+    "dim": true,
+    "Vector": true
+  }
+}
