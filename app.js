@@ -85,15 +85,15 @@ class App {
       const balls = [
         new Ball({
           r: 2,
-          x: 50,
+          x: 30,
           y: 10,
           dx: 0.5,
-          dy: 0.5,
+          dy: 1,
         }),
         new Ball({
           r: 2,
-          x: 90,
-          y: 48,
+          x: 40,
+          y: 60,
           dx: -0.5,
           dy: -0.5,
         }),

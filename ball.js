@@ -2,13 +2,13 @@ class Ball {
   constructor(config) {
     this.state = {
       type: 'circle',
-      r: config.r || 1,
-      x: config.x || 0,
-      y: config.y || 0,
-      dx: config.dx || 1,
-      dy: config.dy || 1,
+      r: config.r,
+      x: config.x,
+      y: config.y,
+      dx: config.dx,
+      dy: config.dy,
       fill: config.fill || 'red',
-      id: config.id || null,
+      id: config.id,
     };
 
 
