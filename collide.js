@@ -26,13 +26,11 @@ function collide(obj1, obj2) {
   const len2 = vec2.length();
   const dirAngle1 = Math.atan2(vec1.vy, vec1.vx);
   const dirAngle2 = Math.atan2(vec2.vy, vec2.vx);
-  const newVX1 = len1 * Math.cos(dirAngle1 - colnAngle);
-  const newVX2 = len2 * Math.cos(dirAngle2 - colnAngle);
 
+  vec1.vx = len2 * Math.cos(dirAngle2 - colnAngle);
+  vec2.vx = len1 * Math.cos(dirAngle1 - colnAngle);
   vec1.vy = len1 * Math.sin(dirAngle1 - colnAngle);
   vec2.vy = len2 * Math.sin(dirAngle2 - colnAngle);
-  vec1.vx = newVX2;
-  vec2.vx = newVX1;
   vec1.rotate(colnAngle);
   vec2.rotate(colnAngle);
 
