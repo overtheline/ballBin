@@ -13,10 +13,12 @@ class App {
 
       const ball1State = ball1.getState();
 
+      // collision loop
       this.objects.slice(i + 1).forEach((ball2) => {
         const ball2State = ball2.getState();
         const distance = dist(ball1State, ball2State);
 
+        // detect collision
         if (distance < ball1State.r + ball2State.r) {
           const postCollideState = collide(ball1State, ball2State, distance);
           ball1.setState(postCollideState[0]);
@@ -48,6 +50,9 @@ class App {
     });
 
     this.update(data);
+
+    // reset collisions
+    this.objects.forEach(d => d.setState({ fill: 'red' }));
   }
 
   update(data) {
@@ -85,17 +90,17 @@ class App {
       const balls = [
         new Ball({
           r: 2,
-          x: 30,
+          x: 40,
           y: 10,
           dx: 0.5,
           dy: 1,
         }),
         new Ball({
           r: 2,
-          x: 40,
-          y: 60,
+          x: 60,
+          y: 10,
           dx: -0.5,
-          dy: -0.5,
+          dy: 1,
         }),
       ];
 
